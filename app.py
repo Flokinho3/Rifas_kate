@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify
 import json
+import os
 
 app = Flask(__name__)
 
@@ -24,4 +25,4 @@ def index():
         return jsonify({"erro": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
