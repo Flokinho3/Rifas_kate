@@ -1,6 +1,6 @@
 <?php
     // Exemplo de valor arrecadado e meta
-    $valorArrecadado = "39000,92"; // Valor em texto com vírgula
+    $valorArrecadado = "0"; // Valor em texto com vírgula
     $meta = 4000000; // Meta em centavos
 
     // Converter vírgula para ponto e depois para número
